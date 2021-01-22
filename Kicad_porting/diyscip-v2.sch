@@ -548,7 +548,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 1500 7950 1500
 Wire Wire Line
-	7950 1500 7950 3200
+	7950 1500 7950 2400
 Wire Wire Line
 	7950 3200 7750 3200
 Wire Wire Line
@@ -681,8 +681,6 @@ Wire Wire Line
 	10550 1500 10550 1400
 Wire Wire Line
 	10550 1400 10800 1400
-Wire Wire Line
-	9700 1500 10550 1500
 $Comp
 L power:GND #PWR017
 U 1 1 5FF1ADFD
@@ -698,8 +696,6 @@ Wire Wire Line
 	9700 1600 9850 1600
 Wire Wire Line
 	9850 1600 9850 2200
-Wire Wire Line
-	9850 2200 8550 2200
 Wire Wire Line
 	8550 2200 8550 2250
 Wire Wire Line
@@ -1254,4 +1250,34 @@ Wire Notes Line
 	550  7650 550  3900
 Text Notes 3500 4250 0    50   ~ 0
 Signal\nconversion\n5v —> 3.3v
+$Comp
+L Device:R R15
+U 1 1 60046BE8
+P 10200 2300
+F 0 "R15" V 9993 2300 50  0000 C CNN
+F 1 "1K" V 10084 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10130 2300 50  0001 C CNN
+F 3 "~" H 10200 2300 50  0001 C CNN
+F 4 "C21190" H 10200 2300 50  0001 C CNN "LCSC"
+	1    10200 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10350 2300 10350 1500
+Wire Wire Line
+	9700 1500 10350 1500
+Connection ~ 10350 1500
+Wire Wire Line
+	10350 1500 10550 1500
+Wire Wire Line
+	8550 2200 9850 2200
+Wire Wire Line
+	10050 2300 9100 2300
+Wire Wire Line
+	9100 2300 9100 2400
+Wire Wire Line
+	9100 2400 7950 2400
+Connection ~ 7950 2400
+Wire Wire Line
+	7950 2400 7950 3200
 $EndSCHEMATC
